@@ -10,7 +10,7 @@ Official [PyTorch](https://pytorch.org) implementation of the paper:
 
 [**S2WAT: Image Style Transfer via Hierarchical Vision Transformer using Strips Window Attention**](https://arxiv.org/abs/2210.12381)  
 
-[Chiyu Zhang](https://alienzhang1996.github.io/), [Jun Yang](https://dblp.org/pid/181/2799-25.html), [Lei Wang][https://orcid.org/0000-0002-6301-0949], [Zaiyan Dai](https://orcid.org/0000-0003-0838-6318)
+[Chiyu Zhang](https://alienzhang1996.github.io/), [Jun Yang](https://dblp.org/pid/181/2799-25.html), [Lei Wang](https://orcid.org/0000-0002-6301-0949), [Zaiyan Dai](https://orcid.org/0000-0003-0838-6318)
 
 
 
