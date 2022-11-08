@@ -65,7 +65,7 @@ conda env create -f environment.yaml
 
 ### Pretrained Models
 
-If you want to use the pre-trained model to perform style transfer or train a new model taking the pre-trained parameters as the initial, please download the the pre-trained files from Google Drive as follow :
+If you want to use the pre-trained model to perform style transfer or train a new model taking the pre-trained parameters as the initial, please download the pre-trained files from Google Drive as follows:
 
 - <a id="VGG19" href="https://drive.google.com/file/d/1nJt6nnEIjBfQMzbH9__TrLJfmHqkaHjy/view?usp=share_link">VGG19</a>
 - <a id="Pre-trained" href="https://drive.google.com/file/d/16Ihs_J9ULYSze2lL5cmptvMyy-ZYJ9kN/view?usp=share_link">Pre-trained model</a>
@@ -76,7 +76,7 @@ Put VGG19 to the ```pre_trained_models``` directory and the pre-trained model to
 
 ### Datasets
 
-The datasets of content images and style images are as follow:
+The datasets of content images and style images are as follows:
 
 |                  Content Dataset                  |                     Style Dataset                      |
 | :-----------------------------------------------: | :----------------------------------------------------: |
@@ -88,7 +88,7 @@ We select 80000 pictures from COCO and WikiArt respectively to build content and
 python3 data_preprocess.py --source_dir ./source --target_dir ./target
 ```
 
-- ```source_dir```: Directory to the images to be processed.
+- ```source_dir```: Directory to the images to be processed
   - ```source_dir``` needs a subfolder of any name to load images, such as ```./source/images```
 - ```target_dir```: Directory to save the processed images
 
@@ -99,7 +99,7 @@ python3 data_preprocess.py --source_dir ./source --target_dir ./target
 To train S2WAT by yourself, you can run the following commands. Before running the commands, please make sure:
 
 - the pre-trained [VGG19](#VGG19), *vgg_normalised.pth*, should be placed to ```vgg_dir```.
-- the [pre-trained model](#Pre-trained), *checkpoint_40000_epoch.pkl* as default, should be placed to ```checkpoint_import_path```, if you want to train a model taking a checkpoint as initial parameters.
+- the [pre-trained model](#Pre-trained), *checkpoint_40000_epoch.pkl* as default, should be placed to ```checkpoint_import_path```, if you want to train a model taking a checkpoint as the initial parameter.
 
 ```python
 # Train from scratch
@@ -112,10 +112,10 @@ python3 train.py --content_dir ./input/Train/Content --style_dir ./input/Train/S
 - ```content_dir```: Directory path to a batch of content images
 - ```style_dir```: Directory path to a batch of style images
 - ```vgg_dir```: Directory path to the pre-trained VGG19
-- ```epoch```: The number of iterations the training has
+- ```epoch```: The number of iterations of the training has
 - ```checkpoint_save_interval```: Directory path to save a checkpoint
 - ```loss_count_interval```: The interval to calculate average losses
-- ```resume_train```: Whether or not to train with a checkpoint as initial parameters
+- ```resume_train```: Whether or not to train with a checkpoint as the initial parameters
 - ```checkpoint_import_path```: Directory path to the importing checkpoint
 
 
@@ -132,11 +132,11 @@ python3 test.py --input_dir ./input/Test --output_dir ./output --checkpoint_impo
 ```
 
 - ```input_dir```: Directory path to a batch of content and style images which are loaded in *Content* / *Style* subfolders respectively
-- ```output_dir```: Directory to save the output image(s)
+- ```output_dir```: Directory to save the output images
 - ```checkpoint_import_path```: Directory path to the importing checkpoint
 
 
 
 ## Contact
 
-If you have any question, please contact alienzhang19961005@gmail.com.
+If you have any questions, please contact alienzhang19961005@gmail.com.
