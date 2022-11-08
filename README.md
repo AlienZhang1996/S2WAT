@@ -82,7 +82,7 @@ The datasets of content images and style images are as follow:
 | :-----------------------------------------------: | :----------------------------------------------------: |
 | [MS_COCO 2014](https://cocodataset.org/#download) | [WikiArt](https://www.kaggle.com/c/painter-by-numbers) |
 
-We preprocess the content and style datasets before training with ```data_preprocess.py``` in which images are resized to 512 on the shorter side and then randomly cropped to 224 x 224. You can use the [preprocessed version](https://www.kaggle.com/datasets/alienzhang/styletransfer224) of the datasets directly or execute the following commands to build one.
+We select 80000 pictures from COCO and WikiArt respectively to build content and style datasets. Then preprocess the content and style datasets before training with ```data_preprocess.py``` in which images are resized to 512 on the shorter side and then randomly cropped to 224 x 224. You can use the [preprocessed version](https://www.kaggle.com/datasets/alienzhang/styletransfer224) of the datasets directly or execute the following commands to build one.
 
 ```python
 python3 data_preprocess.py --source_dir ./source --target_dir ./target
