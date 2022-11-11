@@ -85,15 +85,10 @@ def mean_variance_norm(feat):
 class TransModule(nn.Module):
   """The Transfer Module of Style Transfer via Transformer
 
-  使用Transformer的Decoder层作为风格迁移的迁移模块
+  Taking Transformer Decoder as the transfer module.
 
   Args:
-    nlayer:     子层数量(int)
-    d_model:    子层输入的序列维度(int)
-    nhead:     子层的头的数量(int)
-    dim_feedforward:子层的前馈层的中间维度(int)
-    dropout:    子层内各模块末尾dropout比例(float)
-    activation:   子层的前馈层的激活函数(function)
+    config: The configuration of the transfer module
   """
   def __init__(self, config: TransModule_Config=None):
     super(TransModule, self).__init__()
@@ -116,8 +111,8 @@ class TransModule(nn.Module):
   def forward(self, content_feature, style_feature):
     """
     Args:
-      content_feature: 内容特征，用于产生Q向量。对应Pytorch的tgt向量。(Tensor,[Batch,sequence,dim])
-      style_feature : 风格特征，用于产生K,V向量。对应Pytorch的memory向量。(Tensor,[Batch,sequence,dim])
+      content_feature: Content features，for producing Q sequences. Similar to tgt sequences in pytorch. (Tensor,[Batch,sequence,dim])
+      style_feature : Style features，for producing K,V sequences.Similar to memory sequences in pytorch.(Tensor,[Batch,sequence,dim])
 
     Returns:
       Tensor with shape (Batch,sequence,dim)
