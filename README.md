@@ -31,9 +31,12 @@ S2WAT is a universal style transfer method consisting of three parts: a) an enco
 ## Style Transfer Examples
 
 <center class='half'>
-    <img src='./pics/fig3_st_examples.png' alt='fig3_st_examples.png' title='fig3_st_examples.png' width='' />
+    <img src='./pics/fig5_st_examples_box.png' alt='fig5_st_examples_box.png' title='fig3_st_examples.png' width='' />
 </center>
 
+<center class='half'>
+    <img src='./pics/fig6_st_examples.png' alt='fig6_st_examples.png' title='fig3_st_examples.png' width='' />
+</center>
 
 
 
