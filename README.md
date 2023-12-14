@@ -12,6 +12,8 @@ Official [PyTorch](https://pytorch.org) implementation of the paper:
 
 [Chiyu Zhang](https://alienzhang1996.github.io/), Xiaogang Xu*, [Lei Wang](https://orcid.org/0000-0002-6301-0949), [Zaiyan Dai](https://orcid.org/0000-0003-0838-6318),  [Jun Yang\*](https://dblp.org/pid/181/2799-25.html)
 
+*Corresponding authors
+
 
 
 S2WAT is a universal style transfer method consisting of three parts: a) an encoder based on a hierarchical vision Transformer, b) a transfer module based on a Transformer decoder, and c) a decoder based on a mirrored VGG. Introducing window-based hierarchical vision Transformers, such as Swin Transformer, to image style transfer directly will result in *locality problem*. S2WAT overcomes this problem with Strips Window Attention (SpW Attention) and is capable of  alleviating the *content leak* issue.
